@@ -15,4 +15,11 @@ const mapDispatchToProps = dispatch => ({
   toggleCartHidden: () => dispatch(toggleCartHidden())
 });
 
+// const mapStateToProps = ({ cart: { cartItems } }) => ({
+//   itemCount: cartItems.reduce(
+//     (accumalatedQuantity, cartItem) => accumalatedQuantity + cartItem.quantity,
+//     0
+//   )
+// });
+
 export default connect(null, mapDispatchToProps)(CartIcon);
