@@ -25,17 +25,6 @@ const CollectionItem = ({ item, addItem }) => {
   );
 };
 
-CollectionItem.propTypes = {
-  item: PropTypes.shape({
-    name: PropTypes.string,
-    price: PropTypes.string,
-    imageUrl: PropTypes.string
-  }).isRequired,
-  addItem: PropTypes.shape({
-    addItem: PropTypes.func
-  }).isRequired
-};
-
 const mapDispatchToProps = dispatch => ({
   addItem: item => dispatch(addItem(item))
 });
