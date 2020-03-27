@@ -3,7 +3,6 @@ import "./collection-item.scss";
 import CustomButtom from "../custom-button/custom-button";
 import { connect } from "react-redux";
 import { addItem } from "../../redux/cart/cart.actions";
-import PropTypes from "prop-types";
 const CollectionItem = ({ item, addItem }) => {
   const { name, price, imageUrl } = item;
   return (
